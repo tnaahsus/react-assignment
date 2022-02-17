@@ -1,38 +1,314 @@
-.App {
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+.box {
+  background: url(./static/Banner.jpg) no-repeat;
+  background-size: 100% 450px;
+  width: 100%;
+  height: 450px;
+  position: relative;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.top-left {
+  position: absolute;
+  font-size: 3.5rem;
+  font-weight: 500;
+  top: 30px;
+  left: 70px;
+}
+.conta {
+  background-color: rgb(241, 241, 241);
+  height: fit-content;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+}
+.module {
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.3)),
+    url(./static/Sky\ Diving.jpg);
+  background-size: 100% 471px;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 471px;
+  border-radius: 10px;
+}
+.module p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.heading{
+  font-size: 30px;
+  font-weight: 600;
+}
+.sectionTwo {
+  display: flex;
+  width: 70%;
+  height: 450px;
+}
+.tripSection {
+  display: flex;
+  margin: 20px 10px;
+  height: 225px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.img {
+  width: 30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.time {
+  display: none;
+}
+.details {
+  width: 50%;
+  height: fit-content;
+  margin: 0 20px;
+  padding-right: 20px;
+  border-right: 2px solid rgb(241, 241, 241);
+}
+.location {
+  border-bottom: 2px solid rgb(241, 241, 241);
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+.location1 {
+  display: none;
+}
+.icon {
+  margin-top: -2px;
+}
+.facility {
+  display: flex;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.facilities {
+  width: 77px;
+  margin-right: 10px;
+  padding: 5px 0;
+  border: 2px solid rgb(241, 241, 241);
+  background-color: rgb(241, 241, 241);
+}
+.facilityIcon {
+  text-align: center;
+}
+.facilityName {
+  font-size: 13px;
+  text-align: center;
+}
+.special {
+  width: fit-content;
+  margin-right: 10px;
+  border: 2px solid rgb(241, 241, 241);
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 2px 10px;
+  color: rgb(135, 164, 245);
+}
+.rates {
+  width: 20%;
+  height: fit-content;
+}
+.stars {
+  font-size: 23px;
+  color: #ffa41c;
+  text-align: center;
+}
+.rating {
+  background-color: #ffa41c;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  padding-right: 8px;
+  padding-left: 4px;
+  border-radius: 5px;
+}
+.reviews {
+  font-size: 14px;
+  text-align: center;
+}
+.mainRate {
+  text-align: center;
+}
+.mainRate span:nth-child(odd) {
+  font-size: 15px;
+  color: grey;
+}
+.rupees {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(245, 66, 66);
+}
+.mainRate button {
+  background-color: green;
+  color: white;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+.mainRate button:hover {
+  transform: scale(1.2);
+  -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5);
+  text-decoration: none;
+  box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5);
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 1300px) {
+  .conta {
+    width: 95%;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .module {
+    width: 80%;
+  }
+  .tripSection {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .conta {
+    width: 97%;
+    margin: 0;
+    background-color: transparent;
+  }
+  .details {
+    width: 40%;
+  }
+  .rates {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 730px) {
+  .module {
+    height: 281px;
+    background-size: 100% 281px;
+  }
+  .heading{
+    font-size:20px;
+  }
+  .module p {
+    text-align: left;
+    font-size: 1.9rem;
+    font-weight: bold;
+    bottom: 0;
+  }
+  .box {
+    background-size: cover;
+    height: 600px;
+  }
+  .top-left {
+    font-size: 2.5rem;
+    left: 0;
+  }
+  .sectionTwo {
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+  .tripSection {
+    flex-direction: column;
+    width: 430px;
+    height: fit-content;
+    border: 2px solid rgb(199, 199, 199);
+  }
+  .details {
+    width: 100%;
+    border-right: none;
+  }
+  .mainRate {
+    text-align: left;
+    margin-top: -10%;
+  }
+  .rates {
+    border-top: 1px solid rgb(160, 160, 160);
+    width: 100%;
+  }
+  .rev {
+    float: right;
+  }
+  .stars {
+    text-align: right;
+  }
+  .reviews {
+    text-align: right;
+  }
+  
+  .location {
+    display: none;
+    border-bottom: none;
+  }
+  .specialActivity {
+    max-width: 463px;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    height: 30px;
+    margin-top: 100px;
+    width: 300px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .specialActivity::-webkit-scrollbar {
+    display: none;
+  }
+  .special {
+    white-space: nowrap;
+    border: 1px solid rgb(160, 160, 160);
+  }
+  .img {
+    display: none;
+  }
+  .img2 {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .time {
+    display: block;
+    position: relative;
+  }
+  .location1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    bottom: 1px;
+  }
+  .mainRate button {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 0;
+  }
+  .mainRate button:hover {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 430px) {
+  .module {
+    width: 90%;
+  }
+  .tripSection {
+    flex-direction: column;
+    width: 350px;
+    height: fit-content;
+  }
+  .mainRate button:hover {
+    transform: scale(1);
   }
 }
